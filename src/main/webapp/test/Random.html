@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中大奖</title>
+    <style>
+        table{
+            font-size: 30px;
+            margin:100px auto;
+        }
+        .ok{
+            background-color: red;
+        }
+        input{
+            font-size: 40px;
+            background-color: gold;
+            margin:0px 44%;
+        }
+        .hide {
+            background-color: white;
+        }
+    </style>
+    <script>
+        function check() {
+            var i=setInterval(checkIt,1000);
+        }
+        function checkIt() {
+            var tds=document.getElementsByTagName("td");
+            var a=parseInt(Math.random()*tds.length);
+            console.log(a);
+            for(var i=0;i<tds.length;i++){
+                tds[i].className = "hide";
+            }
+            tds[a].className="ok";
+        }
+    </script>
+</head>
+<body>
+<div>
+<table border="1" cellspacing="0" width="100%">
+    <tr>
+        <td ></td>
+        <td>付俊超</td>
+        <td>沈家瑶</td>
+        <td>周华强</td>
+        <td>马武</td>
+        <td rowspan="6">&nbsp;&nbsp;&nbsp;      </td>
+        <td>陈俊</td>
+        <td>方程伟</td>
+        <td>张中法</td>
+        <td>顾家梁</td>
+        <td></td>
+
+    </tr>
+    <tr>
+        <td>杨雨雨</td>
+        <td>王忻禕</td>
+        <td>施春华</td>
+        <td>胡实</td>
+        <td>王浩</td>
+        <td>汤敏</td>
+        <td>苏志鹏</td>
+        <td>陈天文</td>
+        <td>陈琦</td>
+        <td>程乔</td>
+
+    </tr>
+    <tr>
+        <td>丁洋</td>
+        <td>吕东泽</td>
+        <td>邱斌权</td>
+        <td>袁洲洋</td>
+        <td>丁健立</td>
+        <td>王振雷</td>
+        <td>邓童</td>
+        <td>曹嘉丰</td>
+        <td>吴锐</td>
+        <td>杨超</td>
+    </tr>
+    <tr>
+        <td>田原</td>
+        <td>刘宣</td>
+        <td>郭鹏</td>
+        <td>王培</td>
+        <td>肖康</td>
+        <td>阚健飞</td>
+        <td>庄耀明</td>
+        <td>吕辉</td>
+        <td>朱建华</td>
+        <td>钱旭东</td>
+    </tr>
+    <tr>
+        <td >陆晨</td>
+        <td>秦天能</td>
+        <td>朱峰</td>
+        <td>唐小俊</td>
+        <td>李琦</td>
+        <td>张俊</td>
+        <td></td>
+        <td>孟猛</td>
+        <td>李兴成</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>米芮平</td>
+        <td>石永</td>
+        <td>李再起</td>
+        <td>章钱亮</td>
+
+        <td>邢龙</td>
+        <td>白露</td>
+        <td>赵海南</td>
+        <td>刘亚楠</td>
+        <td></td>
+    </tr>
+</table>
+    <input type="button" value="中奖了" onclick="check();">
+</div>
+</body>
+</html>
